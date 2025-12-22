@@ -1,14 +1,16 @@
 import Cabecalho from "@/components/Cabecalho";
-
-
+import Conteudo from "@/components/Conteudo";
+import Rodape from "@/components/Rodape";
 
 export default function Page() {
     return (
         <div className={`
-            p-4
+            flex flex-col gap-4 p-4
+            h-screen
         `}>
             <Cabecalho />
-            Criar página na pasta Apps
+            <Conteudo />
+            <Rodape />
         </div>
     )
 }

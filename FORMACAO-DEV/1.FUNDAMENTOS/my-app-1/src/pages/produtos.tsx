@@ -1,28 +1,22 @@
 import '@/app/globals.css';
-import Cabecalho from '@/components/Cabecalho';
-import Conteudo from '@/components/Conteudo';
-import Rodape from '@/components/Rodape';
+import Modelo from '@/components/Modelo';
+
 
 export default function Produtos() {
     return (
-        <div>
-            <Cabecalho 
-                cabecalho_titulo="Nossos Produtos"
-                cabecalho_subtitulo="Os melhores produtos você encontra aqui"
-            />
-            <Conteudo>
-                <h1>Os melhores produtos do mundo:</h1>
-                <ul className='list-disc pl-10'>
-                    <li>Café</li>
-                    <li>Teclado</li>
-                    <li>Mouse</li>
-                    <li>Código</li>
-                </ul>
-            </Conteudo>
-            <Rodape 
-                rodape_texto_esquerda="Agora vai"
-                rodape_texto_direita="Vamo que vamo"
-            />
-        </div>
+        <Modelo 
+            cabecalho_titulo="Página de Produtos"
+            cabecalho_subtitulo="Os melhores produtos você encontra aqui"
+            rodape_texto_esquerda="Feito com Amor"
+            rodape_texto_direita="Vamo que vamooo"
+        >
+            <h1>Lista de Produtos</h1>
+            <ul className='list-disc pl-8'>
+                <li>Café</li>
+                <li>Mouse</li>
+                <li>Teclado</li>
+                <li>Código</li>
+            </ul>
+        </Modelo>
     )
 }

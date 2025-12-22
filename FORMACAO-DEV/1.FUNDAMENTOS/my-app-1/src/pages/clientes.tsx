@@ -1,20 +1,29 @@
 import '../app/globals.css';
-import Conteudo from '@/components/Conteudo';
-import Cabecalho from "@/components/Cabecalho";
-import Rodape from '@/components/Rodape';
+import Modelo from '@/components/Modelo';
 
 export default function Clientes() {
     return (
-        <div className='flex flex-col gap-5 p-5'>
-            <Cabecalho 
-                cabecalho_titulo="Minha novas Página"
-                cabecalho_subtitulo="Página criada na pasta PAGES"
-            />
-            <Conteudo />
-            <Rodape 
-                rodape_texto_esquerda="Feito com Amor"
-                rodape_texto_direita="Flavio Ribeiro"
-            />
-        </div>
+        <Modelo
+            cabecalho_titulo="Clientes de Ouro"
+            cabecalho_subtitulo="Nossos Clientes são os melhores..."
+            rodape_texto_esquerda="Não deixe para depois"
+            rodape_texto_direita="Vamo juntooo"
+        >
+            <h1>Clientes</h1>
+            <p>Conheça nossos Produtos e se torne nosso Cliente</p>
+            <button>Depoimentos inspiradores</button>
+        </Modelo>
+        
+        // <div className='flex flex-col gap-5 p-5'>
+        //     <Cabecalho 
+        //         cabecalho_titulo="Minha novas Página"
+        //         cabecalho_subtitulo="Página criada na pasta PAGES"
+        //     />
+        //     <Conteudo />
+        //     <Rodape 
+        //         rodape_texto_esquerda="Feito com Amor"
+        //         rodape_texto_direita="Flavio Ribeiro"
+        //     />
+        // </div>
     )
 }

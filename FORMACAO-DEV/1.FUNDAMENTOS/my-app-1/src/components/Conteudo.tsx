@@ -5,7 +5,7 @@ export default function Conteudo(props: any) {
             bg-emerald-500 rounded-lg
         `}>
             <div>
-                <div>{props.children}</div>
+                {props.children}
             </div>
         </div>
     )

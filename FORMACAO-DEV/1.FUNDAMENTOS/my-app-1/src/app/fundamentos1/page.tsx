@@ -8,7 +8,10 @@ export default function Page() {
             flex flex-col gap-4 p-4
             h-screen
         `}>
-            <Cabecalho />
+            <Cabecalho 
+                cabecalho_titulo="Minha Aplicação"
+                cabecalho_subtitulo="O melhor App da web..."
+            />
             <Conteudo />
             <Rodape />
         </div>

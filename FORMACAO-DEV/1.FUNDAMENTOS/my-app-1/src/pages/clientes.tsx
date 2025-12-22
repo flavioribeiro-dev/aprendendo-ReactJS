@@ -11,7 +11,10 @@ export default function Clientes() {
                 cabecalho_subtitulo="Página criada na pasta PAGES"
             />
             <Conteudo />
-            <Rodape />
+            <Rodape 
+                rodape_texto_esquerda="Feito com Amor"
+                rodape_texto_direita="Flavio Ribeiro"
+            />
         </div>
     )
 }

@@ -11,6 +11,9 @@ export default function PageDefault(props: any) {
                 <Menu />
                 <div className="flex flex-col gap-4 h-screen w-screen">
                     <Cabecalho
+                        className={`h-40 
+                            bg-linear-to-r from-red-800 to-orange-300
+                        `}
                         cabecalho_titulo={props.cabecalho_titulo}
                     />
                     <div className="flex gap-4 h-screen">

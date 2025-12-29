@@ -1,15 +1,15 @@
-interface PageDefaultProps {
-    cabecalho_titulo: string
-}
-
 import '@/app/globals.css';
 import Cabecalho from "./Cabecalho";
 import Conteudo from "./Conteudo";
 import Rodape from "./Rodape";
-import Menu from './Menu';
 import AreaLateral from './AreaLateral';
 
-export default function PageDefault(props: any) {
+interface PageDefaultProps {
+    cabecalho_titulo: string
+    children: any
+}
+
+export default function PageDefault(props: PageDefaultProps) {
     return (
         <div>
             <div className={`flex`}>
